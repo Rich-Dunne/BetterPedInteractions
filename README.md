@@ -29,7 +29,7 @@ The basic XML layout is as follows without a sub category:
   </MenuCategory>
 </Interactions>
 ```
-Basic XML layout with a sub category:
+Basic XML layout with a sub category, `<BelongsToDialoguePath>`, `<CategoryToEnableWhenSelected>`, and `<DialoguePathToEnableWhenSelected>` defined:
 ```xml
 <Interactions menu="Cop">
   <MenuCategory>
@@ -42,7 +42,7 @@ Basic XML layout with a sub category:
                 <Level>1</Level>
                 <EnableItemByDefault>true</EnableItemByDefault>
                 <BelongsToDialoguePath>My Custom Dialogue Path</BelongsToDialoguePath>
-                <CategoryToEnableWhenSelected enableGlobally="false">Some Other Category</CategoryToEnableWhenSelected>
+                <CategoryToEnableWhenSelected enableGlobally="true">Some Other Category</CategoryToEnableWhenSelected>
                 <DialoguePathToEnableWhenSelected enableGlobally="false">Another Dialogue Path</DialoguePathToEnableWhenSelected>
                 <MenuPrompt>A menu item you say to the Ped</MenuPrompt>
                 <AudioPrompt>Something you can say to trigger this menu item</AudioPrompt>
@@ -64,7 +64,7 @@ Basic XML layout with a sub category:
 6. `<Level>` is the "read level" required to make the menu item visible in the menu.  Each `<MenuCategory>` and `<SubCategory>` starts at level 1 and displays all enabled `<MenuItem>` elements with the same or lesser level.  In game, when a `<MenuItem>` with the same level as the category is selected, the category's level is increased by 1.  This level system allows you to hide menu items which will only be shown after selecting a certain number of menu items.  If this feature is too confusing for you, don't worry about it.
 7. `<EnableItemByDefault>` determines whether the menu item will be visible in the menu by default.  This value can be *true* or *false*.  You may want to set this to *false* if you only want it to appear after choosing certain dialogue options (explained later).
 8. `<BelongsToDialoguePath>` assigns the menu item to a user-defined "dialogue path."  The dialogue path system is another way of hiding and displaying specific menu items.
-9. `<CategoryToEnableWhenSelected>` determines which `<MenuCategory>` or `<SubCategory>` sections to enable after the menu item is selected.  The value provided here must match a `<CategoryName>` exactly.  The `<CategoryToEnableWhenSelected>` has one **optional** attribute, `enableGlobally`, which takes a value of *true* or *false*.  If set to true, the category given in the `<CategoryToEnableWhenSelected>` tag will be enabled for **all** peds collected by the plugin.
+9. `<CategoryToEnableWhenSelected>` determines which `<MenuCategory>` or `<SubCategory>` sections to enable after the menu item is selected.  The value provided here must match a `<CategoryName>` exactly.  The `<CategoryToEnableWhenSelected>` has one **optional** attribute, `enableGlobally`, which takes a value of *true* or *false*.  If set to true, the category given in the `<CategoryToEnableWhenSelected>` tag will be enabled for **all** peds collected by the plugin.  *Note that even if a category is enabled, it will not appear if it does not have any enabled menu items.*
 10. `<DialoguePathToEnableWhenSelected>` tag determines which dialogue path to enable after the menu item is selected.  The value provided here must match a `<BelongsToDialoguePath>` exactly.  The `<DialoguePathToEnableWhenSelected>` has one **optional** attribute, `enableGlobally`, which takes a value of *true* or *false*.  If set to true, the dialogue path given in the `<DialoguePathToEnableWhenSelected>` tag will be enabled for **all** peds collected by the plugin.
 11. `<MenuPrompt>` is the name of the menu item, which is the text that will appear for the menu item in-game.  This also doubles as an `AudioPrompt`, which means if you're using your microphone, you can say this to trigger the menu item.
 12. `<AudioPrompt>` is an alternate dialogue option you can say with your microphone (won't appear in the menu) to trigger this menu item.  You can have as many `<AudioPrompt>` items as you want.
