@@ -6,9 +6,14 @@ Drag and drop the contents from within the downloaded GTA V folder into where yo
 ## GET SUPPORT AND REPORT PROBLEMS
 For the fastest support, [join my Discord](https://discord.gg/cUQaTNQ) and ask your question in the **correct category/channel**.  For slower support, [use this thread on the LSPDFR forums](https://www.lcpdfr.com/forums/topic/107730-richs-plugin-support-thread/).
 
-## HOW TO USE BETTER PED INTERACTIONS
-### XML Structuring
+## HOW TO XML
+### Naming XMLs
+You can name your XMLs whatever you want; however, it might be beneficial to follow the naming convention `_______CivInteractions.xml` and `_______CopInteractions.xml` where the blank line is your custom name, callout pack, etc.
 
+### Installing XMLs
+XMLs must be installed within the `BetterPedInteractions` folder, which is inside the `plugins` folder.  By default, there are two folders provided within the `BetterPedInteractions` folder: `Custom` and `Default`.  You can create your own folder here.  Ultimately it doesn't matter where your XMLs are installed within the `BetterPedInteractions` folder.
+
+### XML Structuring
 The basic XML layout is as follows without a sub category:
 ```xml
 <Interactions menu="Civ">
@@ -69,9 +74,3 @@ Basic XML layout with a sub category, `<BelongsToDialoguePath>`, `<CategoryToEna
 11. `<MenuPrompt>` is the name of the menu item, which is the text that will appear for the menu item in-game.  This also doubles as an `AudioPrompt`, which means if you're using your microphone, you can say this to trigger the menu item.
 12. `<AudioPrompt>` is an alternate dialogue option you can say with your microphone (won't appear in the menu) to trigger this menu item.  You can have as many `<AudioPrompt>` items as you want.
 13. `<Response>` is the response a ped can give you after you select this menu item in-game.  The `<Response>` tag has one **optional** attribute, `honesty`, which takes a value of *truth* or *lie*.  A ped's initial response is chosen at random, then will generally adhere to the ped's honesty if the attribute was defined for the chosen response.  You can have as many `<Response>` items as you want.
-
-### Naming XMLs
-You can name your XMLs whatever you want; however, it might be beneficial to follow the naming convention `_______CivInteractions.xml` and `_______CopInteractions.xml` where the blank line is your custom name, callout pack, etc.
-
-### Installing XMLs
-XMLs must be installed within the `BetterPedInteractions` folder, which is inside the `plugins` folder.  By default, there are two folders provided within the `BetterPedInteractions` folder: `Custom` and `Default`.  You can create your own folder here.  Ultimately it doesn't matter where your XMLs are installed within the `BetterPedInteractions` folder.
