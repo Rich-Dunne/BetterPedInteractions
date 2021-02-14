@@ -4,7 +4,7 @@ Drag and drop the contents from within the downloaded GTA V folder into where yo
 ![How to drag and drop](https://i.imgur.com/0O7d7Iw.jpg)
 
 ## GET SUPPORT AND REPORT PROBLEMS
-For the fastest support, [join my Discord](https://discord.gg/cUQaTNQ) and ask your question in the **correct category/channel**.  For slower support, [use this thread on the LSPDFR forums](https://www.lcpdfr.com/forums/topic/107730-richs-plugin-support-thread/).
+Since this plugin is currently only available for Patrons, please use the appropriate channels in [the Discord server](https://discord.gg/cUQaTNQ) to report bugs and get support.
 
 ## HOW TO XML
 ### Installing XMLs
