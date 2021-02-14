@@ -41,9 +41,9 @@ Basic XML layout with a sub category:
             <MenuItem>
                 <Level>1</Level>
                 <EnableItemByDefault>true</EnableItemByDefault>
-                <BelongsToDialoguePath></BelongsToDialoguePath>
-                <CategoryToEnableWhenSelected enableGlobally="false"></CategoryToEnableWhenSelected>
-                <DialoguePathToEnableWhenSelected enableGlobally="false"></DialoguePathToEnableWhenSelected>
+                <BelongsToDialoguePath>My Custom Dialogue Path</BelongsToDialoguePath>
+                <CategoryToEnableWhenSelected enableGlobally="false">Some Other Category</CategoryToEnableWhenSelected>
+                <DialoguePathToEnableWhenSelected enableGlobally="false">Another Dialogue Path</DialoguePathToEnableWhenSelected>
                 <MenuPrompt>A menu item you say to the Ped</MenuPrompt>
                 <AudioPrompt>Something you can say to trigger this menu item</AudioPrompt>
                     <Response>Thank you, sir!</Response>
