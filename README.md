@@ -7,11 +7,11 @@ Drag and drop the contents from within the downloaded GTA V folder into where yo
 For the fastest support, [join my Discord](https://discord.gg/cUQaTNQ) and ask your question in the **correct category/channel**.  For slower support, [use this thread on the LSPDFR forums](https://www.lcpdfr.com/forums/topic/107730-richs-plugin-support-thread/).
 
 ## HOW TO XML
-### Naming XMLs
-You can name your XMLs whatever you want; however, it might be beneficial to follow the naming convention `_______CivInteractions.xml` and `_______CopInteractions.xml` where the blank line is your custom name, callout pack, etc.
-
 ### Installing XMLs
 XMLs must be installed within the `BetterPedInteractions` folder, which is inside the `plugins` folder.  By default, there are two folders provided within the `BetterPedInteractions` folder: `Custom` and `Default`.  You can create your own folder here.  Ultimately it doesn't matter where your XMLs are installed within the `BetterPedInteractions` folder.
+
+### Naming XMLs
+You can name your XMLs whatever you want; however, it might be beneficial to follow the naming convention `_______CivInteractions.xml` and `_______CopInteractions.xml` where the blank line is your custom name, callout pack, etc.
 
 ### XML Structuring
 The basic XML layout is as follows without a sub category:
