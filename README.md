@@ -35,7 +35,7 @@ The basic XML layout is as follows without a sub category:
   </MenuCategory>
 </Interactions>
 ```
-Basic XML layout with a sub category, `<BelongsToDialoguePath>`, `<CategoryToEnableWhenSelected>`, and `<DialoguePathToEnableWhenSelected>` defined:
+Basic XML layout with a sub category, `<DialoguePath>`, `<CategoryToEnableWhenSelected>`, and `<DialoguePathToEnableWhenSelected>` defined:
 ```xml
 <Interactions menu="Cop">
   <MenuCategory>
