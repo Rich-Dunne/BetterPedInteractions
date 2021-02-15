@@ -8,7 +8,7 @@ Since this plugin is currently only available for Patrons, please use the approp
 
 ## HOW TO XML
 ### Installing XMLs
-XMLs must be installed within the `BetterPedInteractions` folder, which is inside the `plugins` folder.  By default, there are two folders provided within the `BetterPedInteractions` folder: `Custom` and `Default`.  You can create your own folder here.  Ultimately it doesn't matter where your XMLs are installed within the `BetterPedInteractions` folder.
+XMLs must be installed within the `BetterPedInteractions` folder, which is inside the `plugins` folder.  By default, there are two folders provided within the `BetterPedInteractions` folder: `Custom` and `Default`.
 
 ### Naming XMLs
 You can name your XMLs whatever you want; however, it might be beneficial to follow the naming convention `_______CivInteractions.xml` and `_______CopInteractions.xml` where the blank line is your custom name, callout pack, etc.
