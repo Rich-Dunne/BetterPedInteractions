@@ -30,7 +30,7 @@ The basic XML layout is as follows without a sub category:
             <MenuText>A menu item you say to the Ped</MenuText>
             <AudioPrompt>Something you can say to trigger this menu item</AudioPrompt>
                 <Response>Thank you, sir!</Response>
-                <Response>Suck a butt, nerd!</Response>
+                <Response dialoguePathToEnable="some dialogue path" enableDialoguePathGlobally="false">Suck a butt, nerd!</Response>
         </MenuItem>
   </MenuCategory>
 </Interactions>
@@ -77,4 +77,4 @@ Basic XML layout with a sub category, `<BelongsToDialoguePath>`, `<CategoryToEna
 14. `<PromptType>` is an optional element that defines the type of prompt the menu item is.  Currently,`<PromptType>` takes a value of *interview* or *interrogation*.  If the Agitation setting is enabled, this attribute will positively or negatively affect a ped's agitation level.
 15. `<MenuText>` is the text that will appear for the menu item in-game.  This also doubles as an `AudioPrompt`, which means if you're using your microphone, you can say this to trigger the menu item.
 16. `<AudioPrompt>` is an alternate dialogue option you can say with your microphone (won't appear in the menu) to trigger this menu item.  You can have as many `<AudioPrompt>` items as you want.
-17. `<Response>` is the response a ped can give you after you select this menu item in-game.  The `<Response>` element has one **optional** attribute, `honesty`, which takes a value of *truth* or *lie*.  A ped's initial response is chosen at random, then will generally adhere to the ped's honesty if the attribute was defined for the chosen response.  You can have as many `<Response>` items as you want.
+17. `<Response>` is the response a ped can give you after you select this menu item in-game.  The `<Response>` element has three **optional** attributes: `honesty`, `dialoguePathToEnable`, and `enableDialoguePathGlobally`.  `honesty` takes a value of *truth* or *lie*, `dialoguePathToEnable` takes a value of any dialogue path you've defined, and `enableDialoguePathGlobally` takes a value of *true* or *false*.  A ped's initial response is chosen at random, then will generally adhere to the ped's honesty if the attribute was defined for the chosen response.  You can have as many `<Response>` items as you want.
